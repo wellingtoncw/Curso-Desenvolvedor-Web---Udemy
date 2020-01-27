@@ -15,6 +15,8 @@
 	margin: 50px auto;
 	padding: 8px;
 	background: #009670;
+	/*box-shadow: 10px 4px 10px 20px black;*/
+	box-shadow: 10px 4px 10px black, -10px -4px 10px black;
 
 	/*background: linear-gradient(80deg, red, yellow);*/
 	/*background: radial-gradient(red, yellow, red, yellow);*/
@@ -23,4 +25,7 @@
 #box h1{
 	color: white;
 	font-size: 60px;
+	/*text-shadow: 10px 10px 10px black;*/
+	/*text-shadow: 20px 20px rgba(0,0,0,0.5);*/
+	text-shadow: 4px 4px black;
 }	
