@@ -7,21 +7,46 @@
 
 	<script type="text/javascript">
 		
-		//string
-		var texto = "Aula de JavaScript";
+		var lista_frutas = Array();  //Posso usar somente [] que o JS sabe que é um Array. Ficaria var lista_frutas = [];
+		lista_frutas[1] = 'Banana';
+		lista_frutas[2] = 'Maça';
+		lista_frutas[3] = 'Morango';
+		lista_frutas[4] = 'Uva';
 
-		//float
-		var numeroFracionado = 10.8;
+		var lista_frutas2 = Array('banana', 'maça', 'uva', 'morango');
 
-		//inteiro
-		var numero = -7;
+		alert(lista_frutas2);
 
-		//boolean
-		var teste = true; //true -> verdadeiro ou false -> falso
+		//arrays multidimensionais (arrays de arrays)
 
-		//alert(teste);
-		document.write(texto);
-		console.log(numeroFracionado);
+		var lista_coisas = Array();
+		lista_coisas['frutas'] = Array();
+		lista_coisas['pessoas'] = Array();
+
+		lista_coisas['frutas2'] = Array('morango', 'banana', 'morango');
+		lista_coisas['pessoas2'] = Array('patricia', 'marcela', 'maria');
+
+		//atribuiçao frutas
+		lista_coisas['frutas'][1] = 'Banana';
+		lista_coisas['frutas'][2] = 'Maça';
+		lista_coisas['frutas'][3] = 'Mamão';
+		lista_coisas['frutas'][4] = 'Uva';
+
+		//atribuição pessoas
+		lista_coisas['pessoas'][1] = 'Joel';
+		lista_coisas['pessoas'][2] = 'Fabio';
+		lista_coisas['pessoas'][3] = 'Carlos';
+		lista_coisas['pessoas'][4] = 'Well';
+
+		//saida no browser
+
+		document.write(lista_coisas['frutas']);
+		//document.write('<br />']);
+		document.write(lista_coisas['pessoas']);
+
+		document.write(lista_coisas['frutas2']);
+		document.write(lista_coisas['pessoas2']);
+		alert(lista_coisas['frutas2'][0]); // pegando pelo indice
 
 	</script>
 </head>
